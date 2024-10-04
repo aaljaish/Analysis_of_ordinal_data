@@ -40,11 +40,11 @@ Ordinal_Cluster_Analysis Macro<b><b>
        - Fits a cumulative logit model (proportional odds model) using `PROC GLIMMIX`.
        - Calculates and displays odds ratios and their cumulative probabilities.
   
-  **Parameters:**
-    - `data=`       : **(Required)** Name of the input dataset.
-    - `y=`          : **(Required)** Name of the response variable (post-test score).
-    - `group=`      : **(Required)** Name of the grouping variable.
-    - `cluster_id=` : **(Required)** Identifier for clustering (e.g., subject ID).
+  **Parameters:**<b>
+    - `data=`       : **(Required)** Name of the input dataset.<b>
+    - `y=`          : **(Required)** Name of the response variable (post-test score).<b>
+    - `group=`      : **(Required)** Name of the grouping variable.<b>
+    - `cluster_id=` : **(Required)** Identifier for clustering (e.g., subject ID).<b>
 
   
   **Usage Instructions:**
