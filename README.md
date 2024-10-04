@@ -32,8 +32,8 @@ Ordinal_Cluster_Analysis Macro<br><br>
     3. **Visually assess proportional odds assumption using Empirical Logit Plot
        - The empirical logit plot is produced using EmpiricalLogitPlot macro provided by Derr (2013).
 
-    Derr, R.E. (2013), "Ordinal Response Modeling with the LOGISTIC Procedure." Proceedings of 
-    the SAS Global Forum 2013 Conference, Cary, NC: SAS Institute Inc.
+		    Derr, R.E. (2013), "Ordinal Response Modeling with the LOGISTIC Procedure." Proceedings of 
+		    the SAS Global Forum 2013 Conference, Cary, NC: SAS Institute Inc.
 
     4. **Proportional Odds Model**:
        - Generates empirical logit plots to check the proportional odds assumption.
