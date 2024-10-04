@@ -1,14 +1,12 @@
-# Analysis_of_ordinal_data
-This macro performs an ordinal cluster analysis on a given dataset. It processes   the data to compute win fractions, conducts a mixed model regression on these    win fractions, and fits a proportional odds model to analyze the relationship    between the response variable and predictor groups within clusters.
+# Analysis_of_ordinal_data<b>
+This macro performs an ordinal cluster analysis on a given dataset. It processes   the data to compute win fractions, conducts a mixed model regression on these    win fractions, and fits a proportional odds model to analyze the relationship between the response variable and predictor groups within clusters.<b><b>
 
-rdinal_Cluster_Analysis Macro
+Ordinal_Cluster_Analysis Macro<b><b>
   
-  This macro performs an ordinal cluster analysis on a given dataset. It processes
-  the data to compute win fractions, conducts a mixed model regression on these 
-  win fractions, and fits a proportional odds model to analyze the relationship 
-  between the response variable and predictor groups within clusters.
+  This macro performs an ordinal cluster analysis on a given dataset. It processes the data to compute win fractions, conducts a mixed model regression on these 
+  win fractions, and fits a proportional odds model to analyze the relationship between the response variable and predictor groups within clusters.<b><b>
   
-  The macro executes the following main steps :
+  The macro executes the following main steps:<b><b>
 
     1. **Convert Data to Win Fractions**:
 	   - Using code provided by Yu (2023)
@@ -75,22 +73,20 @@ rdinal_Cluster_Analysis Macro
        - **Proportional Odds Model**: Assesses the association between the grouping variable and the ordinal response, providing odds ratios that reflect the likelihood of higher versus lower categories of the response variable.
   
   **Example Usage:**
-    Suppose you have a dataset `clinical_trial` with the following variables:
-      - `patient_id` : Unique identifier for each patient (cluster ID).
-      - `treatment`  : Treatment group indicator (e.g., 0 = Control, 1 = Treatment).
-      - `score`      : Post-treatment score (ordinal response).
+    Suppose you have a dataset `clinical_trial` with the following variables:<b>
+      - `patient_id` : Unique identifier for each patient (cluster ID).<b>
+      - `treatment`  : Treatment group indicator (e.g., 0 = Control, 1 = Treatment).<b>
+      - `score`      : Post-treatment score (ordinal response).<b><b>
         
-  **Notes:**
-    - Ensure that the response variable (`y`) is appropriately scaled and ordinal.
-    - The macro assumes that higher values of `y` indicate better outcomes. If lower 
-	  values are of interest, consider modifying the `DESCENDING` option within the macro as needed.
-    - The macro includes internal plotting (`%EmpiricalLogitPlot`) for diagnostic checks. 
-	  Ensure that the `EmpiricalLogitPlot` macro is available in your SAS environment.
+  **Notes:**<b>
+    - Ensure that the response variable (`y`) is appropriately scaled and ordinal.<b>
+    - The macro assumes that higher values of `y` indicate better outcomes. If lower values are of interest, consider modifying the `DESCENDING` option within the macro as needed.<b>
+    - The macro includes internal plotting (`%EmpiricalLogitPlot`) for diagnostic checks. <b>
+	  Ensure that the `EmpiricalLogitPlot` macro is available in your SAS environment.<b><b>
     
-  **Dependencies:**
-    - `%EmpiricalLogitPlot` Macro: This macro is called within `Ordinal_Cluster_Analysis` 
-	  for plotting empirical logits. Ensure it is defined and available in your SAS session.
+  **Dependencies:**<b>
+    - `%EmpiricalLogitPlot` Macro: This macro is called within `Ordinal_Cluster_Analysis` for plotting empirical logits. Ensure it is defined and available in your SAS session.<b><b>
     
-  **Author:** Ahmed Al-Jaishi
-  **Version:** 1.0
-  **Date:** 2024-10-04
+  **Author:** Ahmed Al-Jaishi<b>
+  **Version:** 1.0<b>
+  **Date:** 2024-10-04<b>
