@@ -85,7 +85,7 @@ Ordinal_Cluster_Analysis Macro<br><br>
 	  Ensure that the `EmpiricalLogitPlot` macro is available in your SAS environment.<br><br>
     
   **Dependencies:**<br>
-    - `%EmpiricalLogitPlot` Macro: This macro is called within `Ordinal_Cluster_Analysis` for plotting empirical logits. Ensure it is defined and available in your SAS session.<br><br>
+    - `%EmpiricalLogitPlot` Macro: This macro is called within `Ordinal_Cluster_Analysis` for plotting empirical logits. The file `Analysis of Ordinal Data Macro.sas` has all the required dependencies for the macro to execute.<br><br>
     
   **Author:** Ahmed Al-Jaishi<br>
   **Version:** 1.0<br>
