@@ -48,8 +48,9 @@ Ordinal_Cluster_Analysis Macro<br><br>
 
   
   **Usage Instructions:**<br>
-    1. **Prepare Your Data**:<br>
-       - Ensure your dataset includes the response variable (`y`), grouping variable (`group`), and a cluster identifier (`cluster_id`).<br>
+  
+    1. **Prepare Your Data**:
+       - Ensure your dataset includes the response variable (`y`), grouping variable (`group`), and a cluster identifier (`cluster_id`).
     
     2. **Invoke the Macro**:
        - Call the macro with the appropriate parameters. For example:
