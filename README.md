@@ -36,7 +36,6 @@ Ordinal_Cluster_Analysis Macro<br><br>
 		    the SAS Global Forum 2013 Conference, Cary, NC: SAS Institute Inc.
 
     4. **Proportional Odds Model**:
-       - Generates empirical logit plots to check the proportional odds assumption.
        - Fits a cumulative logit model (proportional odds model) using `PROC GLIMMIX`.
        - Calculates and displays odds ratios and their cumulative probabilities.
   
