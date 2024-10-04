@@ -85,8 +85,86 @@ Ordinal_Cluster_Analysis Macro<br><br>
 	  Ensure that the `EmpiricalLogitPlot` macro is available in your SAS environment.<br><br>
     
   **Dependencies:**<br>
-    - `%EmpiricalLogitPlot` Macro: This macro is called within `Ordinal_Cluster_Analysis` for plotting empirical logits. The file `Analysis of Ordinal Data Macro.sas` has all the required dependencies for the macro to execute.<br><br>
-    
-  **Author:** Ahmed Al-Jaishi<br>
-  **Version:** 1.0<br>
-  **Date:** 2024-10-04<br>
+    - `%EmpiricalLogitPlot` Macro: This macro is called within `Ordinal_Cluster_Analysis` for plotting empirical logits. The file `Analysis of Ordinal Data Macro.sas` has all the required dependencies for the macro to execute.<br><be>
+
+
+Certainly! Below is a **brief description** of the simulated dataset, formatted for inclusion on your GitHub page. This description outlines the key aspects of the simulation process, including the study design, data structure, and outcome distributions.
+
+---
+
+## 📊 Simulated Clustered Ordinal Data
+
+This dataset has simulated clustered ordinal outcomes for a study involving two groups. The simulation incorporates intra-cluster correlation to mimic real-world scenarios where observations within the same cluster may be more similar to each other than to those in different clusters.
+
+### 🔍 **Study Design & Parameters**
+
+- **Groups:**  
+  - **Group A**
+  - **Group B**
+
+- **Clusters:**  
+  - **Total Clusters:** 80  
+  - **Clusters per Group:** 40  
+  - **Patients per Cluster:** 50  
+  - **Total Patients:** 4,000
+
+- **Intra-Class Correlation (ICC):**  ~0.05
+
+### 🎯 **Outcome Variable**
+
+- **Type:** Ordinal  
+- **Scale:** 0 to 10  
+- **Distributions:**
+  
+   **Group A:**  
+    | Outcome | Probability |
+    |---------|-------------|
+    | 0       | 8.95%         |
+    | 1       | 3.50%          |
+    | 2       | 8.25%          |
+    | 3       | 5.20%          |
+    | 4       | 7.85%          |
+    | 5       | 10.20%         |
+    | 6       | 7.55%          |
+    | 7       | 8.30%         |
+    | 8       | 25.70%         |
+    | 9       | 2.00%          |
+    | 10      | 12.50%         |
+
+   **Group B:**  
+    | Outcome | Probability |
+    |---------|-------------|
+    | 0       | 21.40%         |
+    | 1       | 4.70%          |
+    | 2       | 12.70%         |
+    | 3       | 6.10%          |
+    | 4       | 8.45%          |
+    | 5       | 10.95%         |
+    | 6       | 5.95%          |
+    | 7       | 6.50%          |
+    | 8       | 17.80%         |
+    | 9       | 1.45%          |
+    | 10      | 4.00%          |
+
+### 📁 **Dataset Overview**
+
+- **Total Observations:** 4,000 patients
+- **Variables:**  
+  | Variable    | Description                                     |
+  |-------------|-------------------------------------------------|
+  | `Group`     | Treatment or exposure group ('A' or 'B')        |
+  | `Cluster`   | Cluster identifier (e.g., 'A_1', 'B_40')        |
+  | `Patient_ID`| Unique patient identifier within each cluster    |
+  | `Outcome`   | Ordinal outcome variable (0 to 10)              |
+
+<br><br>
+-------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------
+			
+	Author: Ahmed Al-Jaishi
+	Version: 1.0
+	Date: 2024-10-04
+-------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------
