@@ -1,0 +1,7 @@
+{
+  "bundle": "t001_ordinal_cluster_analysis",
+  "source_file": "01_Ordinal Data Macros.sas",
+  "source_blob_sha": "f764f4e140e400b85797c79509f92ccfc73d5c05",
+  "source_commit": "fcd25921f56ec9dc589d860e958934168aab3374",
+  "notes": "Author's %Ordinal_Cluster_Analysis macro exercised through its win-fraction computation, the PROC MIXED (REML, CS random intercept) regression on win fractions, and the win-probability confidence-interval step (Yu 2023 core). Invoked with the repo's own caller parameters (y=Outcome, group=Group_Code, cluster_id=Cluster) on a compact sample drawn from the repo's Sample Data.csv (12 clusters, 6 per group, loaded inline). The diagnostic tail (%EmpiricalLogitPlot, which depends on the external %CtoN macro not present in the repo, and PROC GLIMMIX) is outside this bundle's scope."
+}

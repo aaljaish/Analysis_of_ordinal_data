@@ -1,0 +1,20 @@
+{
+  "_captured_at": "2026-07-23T11:53:47.748712+00:00",
+  "_captured_run_id": "r_0151a62c7edb477cbabb30dc990a23d5",
+  "status": "ok",
+  "exit_code": 0,
+  "log_contains": [
+    "Wrote DataSetName (96 rows, 6 columns).",
+    "Wrote _temp2 (22 rows, 4 columns).",
+    "PROC TRANSPOSE data=_temp2",
+    "Wrote _temp2 (2 rows, 13 columns)."
+  ],
+  "log_does_not_contain": [
+    "ERROR:",
+    "[JENNER-ERROR"
+  ],
+  "diagnostics": {
+    "parse_warnings": [],
+    "runtime_warnings": []
+  }
+}

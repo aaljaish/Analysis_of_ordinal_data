@@ -1,0 +1,7 @@
+{
+  "bundle": "t002_oneclassplot",
+  "source_file": "01_Ordinal Data Macros.sas",
+  "source_blob_sha": "f764f4e140e400b85797c79509f92ccfc73d5c05",
+  "source_commit": "fcd25921f56ec9dc589d860e958934168aab3374",
+  "notes": "Author's %OneClassPlot helper macro exercised in data-set mode (plot=0): PROC FREQ (sparse cross-tab of Group_Code by Outcome), PROC TRANSPOSE, then the empirical-cumulative-logit arithmetic c1..c10. Invoked on a compact sample from the repo's Sample Data.csv (x=Group_Code, y=Outcome, numy=11). Numeric x means the internal %CtoN (character-to-numeric) branch is not reached, so no external dependency is needed. The lgtlabl/numym1 globals the parent EmpiricalLogitPlot macro would set are supplied in the bundle autoexec."
+}

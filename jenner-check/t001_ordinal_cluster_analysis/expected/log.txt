@@ -1,0 +1,102 @@
+NOTE: Option OBS changed to 100.
+NOTE: DATA DataSetName
+
+NOTE: Processing inline DATALINES (96 lines)
+
+NOTE: Read 96 rows from DATALINES.
+NOTE: Wrote DataSetName (96 rows, 6 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC SORT data=DataSetName
+
+NOTE: Read 96 rows from DataSetName.
+NOTE: Wrote DataSetName (96 rows, 6 columns).
+NOTE: PROC SORT statement used.
+NOTE: PROC RANK data=DataSetName out=overall
+
+
+NOTE: Read 96 rows from DataSetName.
+NOTE: Wrote overall (96 rows, 7 columns).
+NOTE: PROC RANK elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC RANK data=DataSetName out=group by-descending=1
+
+
+NOTE: Read 96 rows from DataSetName.
+NOTE: Wrote group (96 rows, 7 columns).
+NOTE: PROC RANK elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC FREQ
+NOTE: Output dataset size4other has 2 observations and 3 variables.
+NOTE: ODS plot written: freq_group_code.spec.json
+NOTE: PROC FREQ statement used.
+NOTE: DATA size4other
+
+
+NOTE: Read 2 rows from size4other.
+NOTE: Wrote size4other (2 rows, 3 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA WinF
+
+NOTE: Stream 1 processed 96 rows, max BY-group size: 48 (O(1) memory verified)
+NOTE: Stream 2 processed 96 rows, max BY-group size: 48 (O(1) memory verified)
+NOTE: Stream 3 processed 2 rows, max BY-group size: 1 (O(1) memory verified)
+
+NOTE: Wrote WinF (96 rows, 4 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC PRINT data=WinF
+
+NOTE: PROC PRINT completed: 10 observations printed, 4 variables
+NOTE: PROC MIXED data=WinF
+
+NOTE: PROC MIXED: using Python wrapper (mixed_renderer.py).
+NOTE: PROC MIXED results written to: ./ods_output/mixed_results.spec.json
+NOTE: Formula: winf ~ C(Group_Code)
+NOTE: Group variable: Cluster
+NOTE: Estimation method: REML (reml=True)
+NOTE: MixedLM fitting failed with lbfgs (Singular matrix), trying powell
+NOTE: 
+NOTE: Mixed Linear Model Results:
+NOTE:            Mixed Linear Model Regression Results
+NOTE: ===========================================================
+NOTE: Model:               MixedLM  Dependent Variable:  winf    
+NOTE: No. Observations:    96       Method:              REML    
+NOTE: No. Groups:          12       Scale:               0.0780  
+NOTE: Min. group size:     8        Log-Likelihood:      -17.3427
+NOTE: Max. group size:     8        Converged:           Yes     
+NOTE: Mean group size:     8.0                                   
+NOTE: -----------------------------------------------------------
+NOTE:                    Coef. Std.Err.   z   P>|z| [0.025 0.975]
+NOTE: -----------------------------------------------------------
+NOTE: Intercept          0.382    0.040 9.470 0.000  0.303  0.461
+NOTE: C(Group_Code)[T.1] 0.237    0.057 4.150 0.000  0.125  0.348
+NOTE: Group Var          0.000    0.018                          
+NOTE: ===========================================================
+NOTE: 
+NOTE: Results written to: ./ods_output/mixed_results.json
+NOTE: ODS plot written: mixed_residuals_vs_predicted.spec.json
+NOTE: ODS plot written: mixed_residual_histogram_panel.spec.json
+NOTE: ODS plot written: mixed_residuals_vs_obs_order.spec.json
+NOTE: ODS plot written: mixed_qq_plot.spec.json
+NOTE: ODS plot written: mixed_diagnostics.spec.json
+NOTE: PROC MIXED ODS Graphics generated.
+NOTE: ODS OUTPUT: Diffs written to 'est'.
+NOTE: DATA results
+
+
+NOTE: Read 1 rows from est.
+NOTE: Wrote results (1 rows, 25 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: Option TITLE changed to Print the Win Probability estimates.
+NOTE: PROC PRINT data=results
+
+NOTE: PROC PRINT completed: 1 observations printed, 6 variables

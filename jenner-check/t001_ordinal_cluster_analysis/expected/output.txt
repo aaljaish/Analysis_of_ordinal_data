@@ -1,0 +1,75 @@
+                                                   The FREQ Procedure
+
+                                        Cumulative    Cumulative
+Group_Code    Frequency    Percent     Frequency      Percent
+-------------------------------------------------------------------
+0                    48     50.00           48        50.00
+1                    48     50.00           96       100.00
+
+  Obs  Cluster  Group_Code          winf  Outcome
+-----  -------  ----------  ------------  -------
+    1  A_1               1  0.9270833333        8
+    2  A_1               1  0.5208333333        4
+    3  A_1               1  0.5208333333        4
+    4  A_1               1             1       10
+    5  A_1               1             1       10
+    6  A_1               1  0.6979166667        6
+    7  A_1               1  0.7916666667        7
+    8  A_1               1  0.9270833333        8
+    9  A_2               1  0.6979166667        6
+   10  A_2               1  0.9270833333        8
+
+... 86 more observations (showing 10 of 96)
+
+           The Mixed Procedure           
+            Model Information            
+
+Item                                Value
+-------------------------  --------------
+Dependent Variable                   winf
+Estimation Method                    REML
+Covariance Structure                   CS
+Degrees of Freedom Method  Between-Within
+Number of Observations                 96
+
+    Covariance Parameter Estimates     
+
+Cov Parm  Subject              Estimate
+--------  -------------------  --------
+CS        Cluster(Group_Code)    0.0000
+Residual                         0.0780
+
+         Type III Tests of Fixed Effects          
+
+Effect        Num DF    Den DF   F Value    Pr > F
+----------  --------  --------  --------  --------
+Group_Code         1      83.0     17.22    0.0001
+
+         Fit Statistics          
+
+Statistic                   Value
+-----------------------  --------
+-2 Res Log Likelihood     34.6854
+AIC (Smaller is Better)   38.6854
+BIC (Smaller is Better)   43.8141
+
+                                 Least Squares Means                                  
+                                  Effect=Group_Code                                   
+
+Group_Code  Estimate  Standard Error        DF   t Value  Pr > |t|     Lower     Upper
+----------  --------  --------------  --------  --------  --------  --------  --------
+0             0.3817          0.0403      94.0      9.47    <.0001    0.3017    0.4618
+1             0.6183          0.0403      94.0     15.34    <.0001    0.5382    0.6983
+
+                                 Differences of Least Squares Means                                  
+                                          Effect=Group_Code                                          
+
+Group_Code  _Group_Code  Estimate  Standard Error        DF   t Value  Pr > |t|  Adjustment     Adj P
+----------  -----------  --------  --------------  --------  --------  --------  ----------  --------
+0           1             -0.2365          0.0570      94.0     -4.15    0.0001  TUKEY         0.0001
+                                          Print the Win Probability estimates
+
+
+  Obs    point    logitlower    logitupper    asinelower    asineupper        pvalue
+-----  -------  ------------  ------------  ------------  ------------  ------------
+    1  0.38175  0.2765485716  0.4993482538  0.0087966327  0.9772526554  0.0407604369
