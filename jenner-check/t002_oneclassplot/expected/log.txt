@@ -1,0 +1,34 @@
+NOTE: Option OBS changed to 100.
+NOTE: DATA DataSetName
+
+NOTE: Processing inline DATALINES (96 lines)
+
+NOTE: Read 96 rows from DATALINES.
+NOTE: Wrote DataSetName (96 rows, 6 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC FREQ
+NOTE: Output dataset _temp2 has 22 observations and 4 variables.
+NOTE: PROC FREQ statement used.
+NOTE: PROC SORT data=_temp2
+
+NOTE: Read 22 rows from _temp2.
+NOTE: Wrote _temp2 (22 rows, 4 columns).
+NOTE: PROC SORT statement used.
+NOTE: PROC TRANSPOSE data=_temp2
+
+NOTE: Created 2 rows.
+NOTE: Output written to /tmp/work/r_0151a62c7edb477cbabb30dc990a23d5/work/7d0cb7f4-086e-4d59-b4b9-47db18d7f7e2/_temp.avro.
+NOTE: DATA _temp2
+
+
+NOTE: Read 2 rows from _temp.
+NOTE: Wrote _temp2 (2 rows, 13 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: Option TITLE changed to Empirical cumulative logits by Group_Code (OneClassPlot output).
+NOTE: PROC PRINT data=_temp2
+
+NOTE: PROC PRINT completed: 2 observations printed, 13 variables
